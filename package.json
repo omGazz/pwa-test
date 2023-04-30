@@ -8,8 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "predeploy": "ng build --prod --base-href=/pwa-sample/",
-    "deploy": "npx gh-pages -d dist/pwa-sample",
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages --dist 'dist' --branch 'release'"
   },
   "private": true,
   "dependencies": {
